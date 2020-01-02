@@ -1,11 +1,32 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html ng-app="LunchCheck" lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+    <title>Module 1 App</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">-->
+    <!--<style>
+      .message { font-size: 1.3em; font-weight: bold; }
+    </style>-->
+    <script src="angular.min.js"> </script>
+    <script src="app.js"> </script>
 
-    <h1>Module 1 project!</h1>
-  </body>
+  </head>
+<body>
+
+
+   <div ng-controller="controllerModule1">
+
+     <input type="text" ng-model="name" name="" value="">
+     Inside my input is: {{name}}
+
+
+     <div class="">
+       <button ng-click="myButton()" type="button" name="button">sssssssss</button>
+     </div>
+
+
+
+   </div>
+
+</body>
 </html>
