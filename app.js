@@ -7,7 +7,7 @@
 
   LunchCheckController.$inject = ['$scope', '$filter'];
 
-  function LunchCheckController($scope, $filter){
+  function LunchCheckController($scope){
 
     $scope.name = "Default value";
     $scope.CheckIfTooMuch = function(){
