@@ -2,11 +2,6 @@
 <html ng-app="LunchCheck" lang="en">
   <head>
     <title>Module 1 App</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">-->
-    <!--<style>
-      .message { font-size: 1.3em; font-weight: bold; }
-    </style>-->
     <script src="angular.min.js"> </script>
     <script src="app.js"> </script>
 
@@ -16,15 +11,15 @@
 
    <div ng-controller="controllerModule1">
 
-     <input type="text" ng-model="name" name="" value="">
-     Inside my input is: {{name}}
-
+     <h3>Insert by comma-separated what you usually eat at lunch!</h1>
+     <input type="text" ng-model="name" ng-blur="upper();">
 
      <div class="">
-       <button ng-click="myButton()" type="button" name="button">sssssssss</button>
+       {{messageOutput}}
+       <br>
+       <button ng-click="CheckIfTooMuch()" type="button" name="button">Check If Too Much</button>
+
      </div>
-
-
 
    </div>
 
